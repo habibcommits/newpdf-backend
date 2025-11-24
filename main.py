@@ -42,19 +42,20 @@ async def health():
         "temp_dir_path": str(temp_dir)
     }
 
+# ----------------------- API Endpoints -----------------------
+
 @app.post("/api/image-to-pdf")
 async def image_to_pdf(background_tasks: BackgroundTasks, files: List[UploadFile] = File(...)):
     if not files:
         raise HTTPException(status_code=400, detail="No files provided")
-    
     if len(files) > settings.MAX_FILES_PER_REQUEST:
         raise HTTPException(
             status_code=400,
             detail=f"Too many files. Maximum {settings.MAX_FILES_PER_REQUEST} files allowed"
         )
-    
+
     temp_files = []
-    
+
     try:
         for upload_file in files:
             if not upload_file.content_type or not upload_file.content_type.startswith("image/"):
@@ -67,16 +68,14 @@ async def image_to_pdf(background_tasks: BackgroundTasks, files: List[UploadFile
             temp_path = Path(settings.TEMP_DIR) / f"upload_{generate_unique_filename(file_ext)}"
             await save_upload_file(upload_file, temp_path)
             temp_files.append(temp_path)
-        
+
         output_filename = generate_unique_filename("pdf")
         output_path = Path(settings.TEMP_DIR) / output_filename
         
         await convert_images_to_pdf(temp_files, output_path)
-        
         cleanup_files(*temp_files)
-        
         background_tasks.add_task(cleanup_files, output_path)
-        
+
         return FileResponse(
             path=output_path,
             filename=f"converted_{output_filename}",
@@ -87,7 +86,6 @@ async def image_to_pdf(background_tasks: BackgroundTasks, files: List[UploadFile
                 "Expires": "0"
             }
         )
-        
     except HTTPException:
         cleanup_files(*temp_files)
         raise
@@ -95,43 +93,34 @@ async def image_to_pdf(background_tasks: BackgroundTasks, files: List[UploadFile
         cleanup_files(*temp_files)
         raise HTTPException(status_code=500, detail=f"Unexpected error: {str(e)}")
 
+
 @app.post("/api/merge-pdf")
 async def merge_pdf_endpoint(background_tasks: BackgroundTasks, files: List[UploadFile] = File(...)):
-    if not files:
-        raise HTTPException(status_code=400, detail="No files provided")
-    
-    if len(files) < 2:
+    if not files or len(files) < 2:
         raise HTTPException(status_code=400, detail="At least 2 PDF files required for merging")
-    
     if len(files) > settings.MAX_FILES_PER_REQUEST:
         raise HTTPException(
             status_code=400,
             detail=f"Too many files. Maximum {settings.MAX_FILES_PER_REQUEST} files allowed"
         )
-    
+
     temp_files = []
-    
+
     try:
         for upload_file in files:
             if not upload_file.content_type or upload_file.content_type != "application/pdf":
-                raise HTTPException(
-                    status_code=400,
-                    detail=f"File {upload_file.filename} is not a PDF"
-                )
+                raise HTTPException(status_code=400, detail=f"File {upload_file.filename} is not a PDF")
             
             temp_path = Path(settings.TEMP_DIR) / f"upload_{generate_unique_filename('pdf')}"
             await save_upload_file(upload_file, temp_path)
             temp_files.append(temp_path)
-        
+
         output_filename = generate_unique_filename("pdf")
         output_path = Path(settings.TEMP_DIR) / output_filename
-        
         await merge_pdfs(temp_files, output_path)
-        
         cleanup_files(*temp_files)
-        
         background_tasks.add_task(cleanup_files, output_path)
-        
+
         return FileResponse(
             path=output_path,
             filename=f"merged_{output_filename}",
@@ -142,13 +131,13 @@ async def merge_pdf_endpoint(background_tasks: BackgroundTasks, files: List[Uplo
                 "Expires": "0"
             }
         )
-        
     except HTTPException:
         cleanup_files(*temp_files)
         raise
     except Exception as e:
         cleanup_files(*temp_files)
         raise HTTPException(status_code=500, detail=f"Unexpected error: {str(e)}")
+
 
 @app.post("/api/compress-pdf")
 async def compress_pdf_endpoint(
@@ -160,16 +149,15 @@ async def compress_pdf_endpoint(
 ):
     if not file.content_type or file.content_type != "application/pdf":
         raise HTTPException(status_code=400, detail="File must be a PDF")
-    
     if color_mode not in ["no-change", "grayscale", "monochrome"]:
         raise HTTPException(
             status_code=400,
             detail="color_mode must be one of: no-change, grayscale, monochrome"
         )
-    
+
     temp_input_path = None
     output_path = None
-    
+
     try:
         temp_input_path = Path(settings.TEMP_DIR) / f"input_{generate_unique_filename('pdf')}"
         await save_upload_file(file, temp_input_path)
@@ -177,18 +165,10 @@ async def compress_pdf_endpoint(
         output_filename = generate_unique_filename("pdf")
         output_path = Path(settings.TEMP_DIR) / output_filename
         
-        await compress_pdf(
-            temp_input_path,
-            output_path,
-            dpi=dpi,
-            image_quality=image_quality,
-            color_mode=color_mode
-        )
-        
+        await compress_pdf(temp_input_path, output_path, dpi=dpi, image_quality=image_quality, color_mode=color_mode)
         cleanup_files(temp_input_path)
-        
         background_tasks.add_task(cleanup_files, output_path)
-        
+
         return FileResponse(
             path=output_path,
             filename=f"compressed_{output_filename}",
@@ -199,20 +179,27 @@ async def compress_pdf_endpoint(
                 "Expires": "0"
             }
         )
-        
     except HTTPException:
         cleanup_files(temp_input_path, output_path)
         raise
     except Exception as e:
         cleanup_files(temp_input_path, output_path)
-        raise HTTPException(status_code=500, detail=f"Unexpected error: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Unexpected error: {str(e)})
+
+# ----------------------- Azure/Local Uvicorn Entry -----------------------
 
 if __name__ == "__main__":
     import uvicorn
+
+    # Use Azure $PORT if available, else fallback to settings.PORT
+    port = int(os.getenv("PORT", getattr(settings, "PORT", 8000)))
+    host = getattr(settings, "HOST", "0.0.0.0")
+    workers = getattr(settings, "WORKERS", 1)
+
     uvicorn.run(
         "main:app",
-        host=settings.HOST,
-        port=settings.PORT,
-        workers=settings.WORKERS,
+        host=host,
+        port=port,
+        workers=workers,
         reload=False
     )
