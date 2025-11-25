@@ -1,0 +1,130 @@
+2025-11-25T19:08:51.1641965Z Container start method called.
+2025-11-25T19:08:51.3404680Z Establishing network.
+2025-11-25T19:08:51.3407485Z Pulling image: appsvc/python:3.11_20251017.5.tuxprod.
+2025-11-25T19:08:52.2834693Z Container is starting.
+2025-11-25T19:08:52.2999840Z Establishing user namespace if not established already.
+2025-11-25T19:08:52.3096782Z Establishing network if not established already.
+2025-11-25T19:08:52.3102972Z Mounting volumes.
+2025-11-25T19:08:52.3125971Z Nested mountpoint 
+2025-11-25T19:08:52.3798523Z Nested mountpoint volatile/logs
+2025-11-25T19:08:52.5112565Z Nested mountpoint 
+2025-11-25T19:08:52.6642351Z Nested mountpoint 
+2025-11-25T19:08:52.7469987Z Nested mountpoint 
+2025-11-25T19:08:53.4243484Z Creating container.
+2025-11-25T19:08:53.4252219Z Creating pipes for streaming container io.
+2025-11-25T19:08:53.4256939Z Creating stdout named pipe at /podr/container/pipe/65cd98d31db3_pdf-api-app-12345/stdout_8e34dc23e9e84a8ab8d6b2b5303cb29a.
+2025-11-25T19:08:53.4617134Z Successfully created stdout named pipe at: /podr/container/pipe/65cd98d31db3_pdf-api-app-12345/stdout_8e34dc23e9e84a8ab8d6b2b5303cb29a.
+2025-11-25T19:08:53.4627581Z Opening named pipe /podr/container/pipe/65cd98d31db3_pdf-api-app-12345/stdout_8e34dc23e9e84a8ab8d6b2b5303cb29a for reading in non-blocking mode.
+2025-11-25T19:08:53.4635902Z Successfully opened named pipe: /podr/container/pipe/65cd98d31db3_pdf-api-app-12345/stdout_8e34dc23e9e84a8ab8d6b2b5303cb29a.
+2025-11-25T19:08:53.4722968Z Successfully removed non-blocking flag from /podr/container/pipe/65cd98d31db3_pdf-api-app-12345/stdout_8e34dc23e9e84a8ab8d6b2b5303cb29a.
+2025-11-25T19:08:53.4727105Z Creating stderr named pipe at /podr/container/pipe/65cd98d31db3_pdf-api-app-12345/stderr_a36fc4e0223046f38364a5ed5dd0c7fa.
+2025-11-25T19:08:53.4740796Z Successfully created stderr named pipe at: /podr/container/pipe/65cd98d31db3_pdf-api-app-12345/stderr_a36fc4e0223046f38364a5ed5dd0c7fa.
+2025-11-25T19:08:53.4747691Z Opening named pipe /podr/container/pipe/65cd98d31db3_pdf-api-app-12345/stderr_a36fc4e0223046f38364a5ed5dd0c7fa for reading in non-blocking mode.
+2025-11-25T19:08:53.4749880Z Successfully opened named pipe: /podr/container/pipe/65cd98d31db3_pdf-api-app-12345/stderr_a36fc4e0223046f38364a5ed5dd0c7fa.
+2025-11-25T19:08:53.4756363Z Successfully removed non-blocking flag from /podr/container/pipe/65cd98d31db3_pdf-api-app-12345/stderr_a36fc4e0223046f38364a5ed5dd0c7fa.
+2025-11-25T19:08:53.4925699Z Creating container with image: appsvc/python:3.11_20251017.5.tuxprod from registry: 10.1.0.4:13209 and fully qualified image name: 10.1.0.4:13209/appsvc/python:3.11_20251017.5.tuxprod
+2025-11-25T19:08:55.7433693Z Starting container: 65cd98d31db3_pdf-api-app-12345.
+2025-11-25T19:08:55.8811647Z Starting watchers and probes.
+2025-11-25T19:08:55.8819146Z Starting metrics collection.
+2025-11-25T19:08:55.8822511Z Container is running.
+2025-11-25T19:08:57.1548881Z Container start method finished after 5943 ms.
+2025-11-25T19:10:09.4946828Z Site startup probe succeeded after 72.054765 seconds.
+2025-11-25T19:10:11.3790520Z Site is running with deployment version: 
+2025-11-25T19:10:11.4079254Z Site started.
+2025-11-25T19:10:11.9175157Z Site is running with patch version PYTHON 3.11.14
+2025-11-25T19:11:04.0660303Z Failed to start site. Revert by stopping site.
+2025-11-25T19:11:04.3698173Z Site: pdf-api-app-12345 stopped.
+2025-11-25T19:11:26.6169568Z Container is terminating. Grace period: 5 seconds.
+2025-11-25T19:11:27.2391687Z Stop and delete container. Retry count = 0
+2025-11-25T19:11:27.2474160Z Stopping container: 65cd98d31db3_pdf-api-app-12345.
+2025-11-25T19:11:33.4862987Z Deleting container: 65cd98d31db3_pdf-api-app-12345. Retry count = 0
+2025-11-25T19:11:34.1174460Z Container spec TerminationMessagePolicy  path 
+2025-11-25T19:11:34.1232360Z Container is terminated. Total time elapsed: 7314 ms.
+2025-11-25T19:11:34.1615168Z Site: pdf-api-app-12345 stopped.
+2025-11-25T19:11:58.1625015Z Container start method called.
+2025-11-25T19:11:58.1626633Z Establishing network.
+2025-11-25T19:11:58.1627934Z Pulling image: appsvc/python:3.11_20251017.5.tuxprod.
+2025-11-25T19:12:00.0586548Z Image appsvc/python:3.11_20251017.5.tuxprod is pulled from registry 10.1.0.5:13209
+2025-11-25T19:12:00.0588275Z Container is starting.
+2025-11-25T19:12:00.0591254Z Establishing user namespace if not established already.
+2025-11-25T19:12:00.0598913Z Establishing network if not established already.
+2025-11-25T19:12:00.0600715Z Mounting volumes.
+2025-11-25T19:12:00.0603101Z Nested mountpoint 
+2025-11-25T19:12:00.0886249Z Nested mountpoint volatile/logs
+2025-11-25T19:12:00.1176781Z Nested mountpoint 
+2025-11-25T19:12:00.1525059Z Nested mountpoint 
+2025-11-25T19:12:00.1792801Z Nested mountpoint 
+2025-11-25T19:12:00.7235692Z Creating container.
+2025-11-25T19:12:00.7237954Z Creating pipes for streaming container io.
+2025-11-25T19:12:00.7239561Z Creating stdout named pipe at /podr/container/pipe/c7177abbb8cb_pdf-api-app-12345/stdout_2d0cef4f65d2481fb818ed8f204be37e.
+2025-11-25T19:12:00.7242727Z Successfully created stdout named pipe at: /podr/container/pipe/c7177abbb8cb_pdf-api-app-12345/stdout_2d0cef4f65d2481fb818ed8f204be37e.
+2025-11-25T19:12:00.7244151Z Opening named pipe /podr/container/pipe/c7177abbb8cb_pdf-api-app-12345/stdout_2d0cef4f65d2481fb818ed8f204be37e for reading in non-blocking mode.
+2025-11-25T19:12:00.7245829Z Successfully opened named pipe: /podr/container/pipe/c7177abbb8cb_pdf-api-app-12345/stdout_2d0cef4f65d2481fb818ed8f204be37e.
+2025-11-25T19:12:00.7247192Z Successfully removed non-blocking flag from /podr/container/pipe/c7177abbb8cb_pdf-api-app-12345/stdout_2d0cef4f65d2481fb818ed8f204be37e.
+2025-11-25T19:12:00.7248620Z Creating stderr named pipe at /podr/container/pipe/c7177abbb8cb_pdf-api-app-12345/stderr_3ba6039ee3694e3ab497dcc435c8d847.
+2025-11-25T19:12:00.7327214Z Successfully created stderr named pipe at: /podr/container/pipe/c7177abbb8cb_pdf-api-app-12345/stderr_3ba6039ee3694e3ab497dcc435c8d847.
+2025-11-25T19:12:00.7329216Z Opening named pipe /podr/container/pipe/c7177abbb8cb_pdf-api-app-12345/stderr_3ba6039ee3694e3ab497dcc435c8d847 for reading in non-blocking mode.
+2025-11-25T19:12:00.7338735Z Successfully opened named pipe: /podr/container/pipe/c7177abbb8cb_pdf-api-app-12345/stderr_3ba6039ee3694e3ab497dcc435c8d847.
+2025-11-25T19:12:00.7341137Z Successfully removed non-blocking flag from /podr/container/pipe/c7177abbb8cb_pdf-api-app-12345/stderr_3ba6039ee3694e3ab497dcc435c8d847.
+2025-11-25T19:12:00.7343047Z Creating container with image: appsvc/python:3.11_20251017.5.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20251017.5.tuxprod
+2025-11-25T19:12:01.3146003Z Starting container: c7177abbb8cb_pdf-api-app-12345.
+2025-11-25T19:12:01.4062637Z Starting watchers and probes.
+2025-11-25T19:12:01.4066318Z Starting metrics collection.
+2025-11-25T19:12:01.4076447Z Container is running.
+2025-11-25T19:12:02.4858152Z Container start method finished after 4323 ms.
+2025-11-25T19:13:00.4062940Z Container has finished running with exit code: 1.
+2025-11-25T19:13:00.4079052Z Container is terminating. Grace period: 5 seconds.
+2025-11-25T19:13:00.4168741Z Stop and delete container. Retry count = 0
+2025-11-25T19:13:00.4267651Z Stopping container: c7177abbb8cb_pdf-api-app-12345.
+2025-11-25T19:13:00.5971337Z Deleting container: c7177abbb8cb_pdf-api-app-12345. Retry count = 0
+2025-11-25T19:13:00.9738400Z Container spec TerminationMessagePolicy  path 
+2025-11-25T19:13:00.9822398Z Container is terminated. Total time elapsed: 568 ms.
+2025-11-25T19:13:01.0003147Z Site container: pdf-api-app-12345 terminated during site startup.
+2025-11-25T19:13:01.0728868Z Site startup probe failed after 58.5736111 seconds.
+2025-11-25T19:13:01.4475953Z Failed to start site. Revert by stopping site.
+2025-11-25T19:13:01.4567240Z Site: pdf-api-app-12345 stopped.
+2025-11-25T19:13:05.7346376Z Container start method called.
+2025-11-25T19:13:05.7349735Z Establishing network.
+2025-11-25T19:13:05.7893621Z Pulling image: appsvc/python:3.11_20251017.5.tuxprod.
+2025-11-25T19:13:06.2411846Z Container is starting.
+2025-11-25T19:13:06.2458525Z Establishing user namespace if not established already.
+2025-11-25T19:13:06.2466765Z Establishing network if not established already.
+2025-11-25T19:13:06.2474392Z Mounting volumes.
+2025-11-25T19:13:06.2560702Z Nested mountpoint 
+2025-11-25T19:13:06.3074964Z Nested mountpoint volatile/logs
+2025-11-25T19:13:06.3349651Z Nested mountpoint 
+2025-11-25T19:13:06.4165921Z Nested mountpoint 
+2025-11-25T19:13:06.4369158Z Nested mountpoint 
+2025-11-25T19:13:07.3956858Z Creating container.
+2025-11-25T19:13:07.3981152Z Creating pipes for streaming container io.
+2025-11-25T19:13:07.4154102Z Creating stdout named pipe at /podr/container/pipe/3a39b467cd65_pdf-api-app-12345/stdout_00a32176dd3c427582b1f1d2c563132f.
+2025-11-25T19:13:07.4157196Z Successfully created stdout named pipe at: /podr/container/pipe/3a39b467cd65_pdf-api-app-12345/stdout_00a32176dd3c427582b1f1d2c563132f.
+2025-11-25T19:13:07.4158155Z Opening named pipe /podr/container/pipe/3a39b467cd65_pdf-api-app-12345/stdout_00a32176dd3c427582b1f1d2c563132f for reading in non-blocking mode.
+2025-11-25T19:13:07.4159302Z Successfully opened named pipe: /podr/container/pipe/3a39b467cd65_pdf-api-app-12345/stdout_00a32176dd3c427582b1f1d2c563132f.
+2025-11-25T19:13:07.4160262Z Successfully removed non-blocking flag from /podr/container/pipe/3a39b467cd65_pdf-api-app-12345/stdout_00a32176dd3c427582b1f1d2c563132f.
+2025-11-25T19:13:07.4161294Z Creating stderr named pipe at /podr/container/pipe/3a39b467cd65_pdf-api-app-12345/stderr_0e7d47e7fbd24fa782b8293f2e9e5a93.
+2025-11-25T19:13:07.4163588Z Successfully created stderr named pipe at: /podr/container/pipe/3a39b467cd65_pdf-api-app-12345/stderr_0e7d47e7fbd24fa782b8293f2e9e5a93.
+2025-11-25T19:13:07.4164749Z Opening named pipe /podr/container/pipe/3a39b467cd65_pdf-api-app-12345/stderr_0e7d47e7fbd24fa782b8293f2e9e5a93 for reading in non-blocking mode.
+2025-11-25T19:13:07.4165881Z Successfully opened named pipe: /podr/container/pipe/3a39b467cd65_pdf-api-app-12345/stderr_0e7d47e7fbd24fa782b8293f2e9e5a93.
+2025-11-25T19:13:07.4166731Z Successfully removed non-blocking flag from /podr/container/pipe/3a39b467cd65_pdf-api-app-12345/stderr_0e7d47e7fbd24fa782b8293f2e9e5a93.
+2025-11-25T19:13:07.4167902Z Creating container with image: appsvc/python:3.11_20251017.5.tuxprod from registry: 10.1.0.5:13209 and fully qualified image name: 10.1.0.5:13209/appsvc/python:3.11_20251017.5.tuxprod
+2025-11-25T19:13:07.9644809Z Starting container: 3a39b467cd65_pdf-api-app-12345.
+2025-11-25T19:13:08.2149789Z Starting watchers and probes.
+2025-11-25T19:13:08.2369023Z Starting metrics collection.
+2025-11-25T19:13:08.2529595Z Container is running.
+2025-11-25T19:13:08.5777249Z Container start method finished after 2833 ms.
+2025-11-25T19:14:11.8147219Z Container has finished running with exit code: 1.
+2025-11-25T19:14:11.8222379Z Container is terminating. Grace period: 5 seconds.
+2025-11-25T19:14:11.8313044Z Stop and delete container. Retry count = 0
+2025-11-25T19:14:11.8314725Z Stopping container: 3a39b467cd65_pdf-api-app-12345.
+2025-11-25T19:14:12.2867759Z Deleting container: 3a39b467cd65_pdf-api-app-12345. Retry count = 0
+2025-11-25T19:14:12.9202969Z Container get mounts received unexpected exception.
+2025-11-25T19:14:12.9323395Z Container get mounts received unexpected exception.
+2025-11-25T19:14:12.9424736Z Container get processes received unexpected exception.
+2025-11-25T19:14:12.9684643Z Container get processes received unexpected exception.
+2025-11-25T19:14:12.9963753Z Container spec TerminationMessagePolicy  path 
+2025-11-25T19:14:13.0046424Z Container is terminated. Total time elapsed: 1173 ms.
+2025-11-25T19:14:13.0145662Z Site container: pdf-api-app-12345 terminated during site startup.
+2025-11-25T19:14:13.0682185Z Site startup probe failed after 64.4443817 seconds.
+2025-11-25T19:14:13.4578255Z Failed to start site. Revert by stopping site.
+2025-11-25T19:14:13.4773058Z Site: pdf-api-app-12345 stopped.

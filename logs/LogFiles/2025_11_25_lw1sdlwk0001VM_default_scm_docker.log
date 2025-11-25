@@ -1,0 +1,259 @@
+2025-11-25T19:06:14.9451603Z     __ __          __      __    _ __     
+2025-11-25T19:06:15.0881547Z    / //_/_  _ ____/ /_  __/ /   (_) /____ 
+2025-11-25T19:06:15.0882241Z   / ,< / / / / __  / / / / /   / / __/ _  
+2025-11-25T19:06:15.0882380Z  / /| / /_/ / /_/ / /_/ / /___/ / /_/  __/
+2025-11-25T19:06:15.0882434Z /_/ |_\__,_/\__,_/\__,_/_____/_/\__/\___/ 
+2025-11-25T19:06:15.0882473Z 
+2025-11-25T19:06:15.0882578Z                                           
+2025-11-25T19:06:15.0882628Z DEBUG CONSOLE | AZURE APP SERVICE ON LINUX
+2025-11-25T19:06:15.0882666Z 
+2025-11-25T19:06:15.0882715Z Documentation: http://aka.ms/webapp-linux
+2025-11-25T19:06:15.0882766Z Kudu Version : 20251023.4
+2025-11-25T19:06:15.0882841Z Commit       : a44ac6b61760b3c2e5996d5e6ddb2a908ab5733e
+2025-11-25T19:06:15.0882890Z Instance Name: lw1sdlwk0001VM
+2025-11-25T19:06:15.0882964Z Instance Id  : 4ebe23afea73935a88dc9dc0a342837ace980fdbee4ce56685b45ffb96e77ef8
+2025-11-25T19:06:15.0883310Z 
+2025-11-25T19:06:15.9870129Z chown: changing ownership of '/temp': Operation not permitted
+2025-11-25T19:06:16.0068452Z chmod: changing permissions of '/temp': Operation not permitted
+2025-11-25T19:06:18.2922245Z Restarting OpenBSD Secure Shell server: sshd.
+2025-11-25T19:06:18.5872545Z node not running, starting node /opt/webssh/index.js
+2025-11-25T19:06:34.5520373Z Tue Nov 25 19:06:34 UTC 2025 running .net core
+2025-11-25T19:06:36.1549679Z Startup : 07.06.36.124491
+2025-11-25T19:06:36.3121722Z Configure Services : 07.06.36.311882
+2025-11-25T19:06:37.0426300Z Configure : 07.06.37.042339
+2025-11-25T19:06:38.0113294Z Setting Up Routes : 07.06.37.593158
+2025-11-25T19:06:38.0113718Z Exiting Configure : 07.06.37.799652
+2025-11-25T19:06:38.0113872Z warn: Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager[35]
+2025-11-25T19:06:38.0113949Z       No XML encryptor configured. Key {bee49998-3d3e-42ec-941b-46a9528e3e4e} may be persisted to storage in unencrypted form.
+2025-11-25T19:06:38.1579516Z Hosting environment: Production
+2025-11-25T19:06:38.1581390Z Content root path: /opt/Kudu
+2025-11-25T19:06:38.1589151Z Now listening on: http://0.0.0.0:8181
+2025-11-25T19:06:38.1653980Z Application started. Press Ctrl+C to shut down.
+2025-11-25T19:06:46.8738696Z Deploy Async
+2025-11-25T19:06:53.7027989Z Operation performed by Microsoft Oryx, https://github.com/Microsoft/Oryx
+2025-11-25T19:06:53.8204624Z You can report issues at https://github.com/Microsoft/Oryx/issues
+2025-11-25T19:06:53.8764292Z 
+2025-11-25T19:06:53.9142429Z Oryx Version: 0.2.20251022.1+bef98bc7139feefaa74be16de9d835e2c85385d4, Commit: bef98bc7139feefaa74be16de9d835e2c85385d4, ReleaseTagName: 20251022.1
+2025-11-25T19:06:53.9447311Z 
+2025-11-25T19:06:53.9993922Z Build Operation ID: d32271542bc61314
+2025-11-25T19:06:54.0744624Z Repository Commit : 6303a9ce-9dc9-46cb-846c-706f8de833f7
+2025-11-25T19:06:54.1793190Z OS Type           : bullseye
+2025-11-25T19:06:54.2444533Z Image Type        : githubactions
+2025-11-25T19:06:54.2902313Z 
+2025-11-25T19:06:54.3291822Z Primary SDK Storage URL: https://oryx-cdn.microsoft.io
+2025-11-25T19:06:54.3614532Z Backup SDK Storage URL: 
+2025-11-25T19:06:54.4168402Z Detecting platforms...
+2025-11-25T19:06:54.5353461Z External SDK provider is enabled.
+2025-11-25T19:06:54.6016154Z Requesting metadata for platform python from external SDK provider
+2025-11-25T19:06:55.1876410Z Requesting metadata for platform python from external SDK provider
+2025-11-25T19:06:55.4503554Z Successfully requested blob for platform python, blobName defaultVersion.bullseye.txt, available at /var/OryxSdks/python/defaultVersion.bullseye.txt
+2025-11-25T19:06:55.6882029Z Detected following platforms:
+2025-11-25T19:06:55.7182604Z   python: 3.11.14
+2025-11-25T19:06:55.7554971Z Requesting metadata for platform python from external SDK provider
+2025-11-25T19:07:02.2819925Z ..
+2025-11-25T19:07:02.2820850Z Successfully requested blob for platform python, blobName python-bullseye-3.11.14.tar.gz, available at /var/OryxSdks/python/python-bullseye-3.11.14.tar.gz
+2025-11-25T19:07:07.7808236Z .
+2025-11-25T19:07:07.7887246Z Version '3.11.14' of platform 'python' is not installed. Generating script to install it...
+2025-11-25T19:07:09.0402084Z 
+2025-11-25T19:07:09.5156654Z Using intermediate directory '/tmp/8de2c55c8d21b76'.
+2025-11-25T19:07:09.5866813Z 
+2025-11-25T19:07:09.6225948Z Copying files to the intermediate directory...
+2025-11-25T19:07:10.0340762Z Done in 1 sec(s).
+2025-11-25T19:07:10.0874523Z 
+2025-11-25T19:07:10.1366656Z Source directory     : /tmp/8de2c55c8d21b76
+2025-11-25T19:07:10.2867624Z Destination directory: /home/site/wwwroot
+2025-11-25T19:07:10.4025027Z 
+2025-11-25T19:07:10.5027578Z 
+2025-11-25T19:07:10.8570484Z Downloading and extracting 'python' version '3.11.14' to '/tmp/oryx/platforms/python/3.11.14'...
+2025-11-25T19:07:10.9701715Z Detected image debian flavor: bullseye.
+2025-11-25T19:07:11.1872841Z Skipping download of python version 3.11.14 as it is available in external sdk provider cache...
+2025-11-25T19:07:11.3010551Z Extracting contents...
+2025-11-25T19:08:11.3869872Z ......................................................
+2025-11-25T19:08:11.3939194Z Successfully extracted python version 3.11.14 from external sdk provider cache...
+2025-11-25T19:08:11.4665788Z Done in 61 sec(s).
+2025-11-25T19:08:11.5169296Z 
+2025-11-25T19:08:11.5764476Z image detector file exists, platform is python..
+2025-11-25T19:08:11.6477816Z OS detector file exists, OS is bullseye..
+2025-11-25T19:08:12.8192157Z Python Version: /tmp/oryx/platforms/python/3.11.14/bin/python3.11
+2025-11-25T19:08:12.8890641Z Creating directory for command manifest file if it does not exist
+2025-11-25T19:08:12.9584690Z Removing existing manifest file
+2025-11-25T19:08:13.0123615Z Python Virtual Environment: antenv
+2025-11-25T19:08:13.0496212Z Creating virtual environment...
+2025-11-25T19:08:13.0850858Z Executing: /tmp/oryx/platforms/python/3.11.14/bin/python3.11 -m venv antenv --copies --system-site-packages
+2025-11-25T19:08:33.7673344Z ................
+2025-11-25T19:08:33.7743828Z Activating virtual environment...
+2025-11-25T19:08:33.9350332Z Running pip install...
+2025-11-25T19:10:41.7703082Z ........................................................................................................................
+2025-11-25T19:10:41.7791407Z [19:08:37+0000] Collecting fastapi==0.104.1 (from -r requirements.txt (line 1))
+2025-11-25T19:10:41.8429976Z [19:08:37+0000]   Downloading fastapi-0.104.1-py3-none-any.whl.metadata (24 kB)
+2025-11-25T19:10:41.8998618Z [19:08:37+0000] Collecting uvicorn==0.24.0 (from uvicorn[standard]==0.24.0->-r requirements.txt (line 2))
+2025-11-25T19:10:41.9374980Z [19:08:37+0000]   Downloading uvicorn-0.24.0-py3-none-any.whl.metadata (6.4 kB)
+2025-11-25T19:10:41.9756125Z [19:08:37+0000] Collecting gunicorn==21.2.0 (from -r requirements.txt (line 3))
+2025-11-25T19:10:42.0199142Z [19:08:37+0000]   Downloading gunicorn-21.2.0-py3-none-any.whl.metadata (4.1 kB)
+2025-11-25T19:10:42.0660839Z [19:08:38+0000] Collecting python-multipart>=0.0.6 (from -r requirements.txt (line 4))
+2025-11-25T19:10:42.1031840Z [19:08:38+0000]   Downloading python_multipart-0.0.20-py3-none-any.whl.metadata (1.8 kB)
+2025-11-25T19:10:42.1515550Z [19:08:38+0000] Collecting Pillow==10.1.0 (from -r requirements.txt (line 5))
+2025-11-25T19:10:42.1882436Z [19:08:38+0000]   Downloading Pillow-10.1.0-cp311-cp311-manylinux_2_28_x86_64.whl.metadata (9.5 kB)
+2025-11-25T19:10:42.2446174Z [19:08:39+0000] Collecting PyPDF2==3.0.1 (from -r requirements.txt (line 6))
+2025-11-25T19:10:42.2967511Z [19:08:39+0000]   Downloading pypdf2-3.0.1-py3-none-any.whl.metadata (6.8 kB)
+2025-11-25T19:10:42.3236585Z [19:08:39+0000] Collecting img2pdf==0.5.0 (from -r requirements.txt (line 7))
+2025-11-25T19:10:42.3902478Z [19:08:39+0000]   Downloading img2pdf-0.5.0.tar.gz (103 kB)
+2025-11-25T19:10:42.4507002Z [19:08:39+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 103.9/103.9 kB 8.4 MB/s eta 0:00:00
+2025-11-25T19:10:42.4984003Z [19:08:39+0000]   Preparing metadata (setup.py): started
+2025-11-25T19:10:42.5470570Z [19:08:40+0000]   Preparing metadata (setup.py): finished with status 'done'
+2025-11-25T19:10:42.5852334Z [19:08:41+0000] Collecting PyMuPDF==1.23.8 (from -r requirements.txt (line 8))
+2025-11-25T19:10:42.6237161Z [19:08:41+0000]   Downloading PyMuPDF-1.23.8-cp311-none-manylinux2014_x86_64.whl.metadata (3.4 kB)
+2025-11-25T19:10:42.6596433Z [19:08:41+0000] Collecting pydantic-settings==2.1.0 (from -r requirements.txt (line 9))
+2025-11-25T19:10:42.6985486Z [19:08:41+0000]   Downloading pydantic_settings-2.1.0-py3-none-any.whl.metadata (2.9 kB)
+2025-11-25T19:10:42.7337811Z [19:08:41+0000] Collecting aiofiles==23.2.1 (from -r requirements.txt (line 10))
+2025-11-25T19:10:42.7714159Z [19:08:41+0000]   Downloading aiofiles-23.2.1-py3-none-any.whl.metadata (9.7 kB)
+2025-11-25T19:10:42.8074090Z [19:08:42+0000] Collecting anyio<4.0.0,>=3.7.1 (from fastapi==0.104.1->-r requirements.txt (line 1))
+2025-11-25T19:10:42.8580619Z [19:08:42+0000]   Downloading anyio-3.7.1-py3-none-any.whl.metadata (4.7 kB)
+2025-11-25T19:10:42.8972928Z [19:08:42+0000] Collecting pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4 (from fastapi==0.104.1->-r requirements.txt (line 1))
+2025-11-25T19:10:42.9506616Z [19:08:42+0000]   Downloading pydantic-2.12.4-py3-none-any.whl.metadata (89 kB)
+2025-11-25T19:10:42.9992197Z [19:08:42+0000]      ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.9/89.9 kB 7.1 MB/s eta 0:00:00
+2025-11-25T19:10:43.0445885Z [19:08:43+0000] Collecting starlette<0.28.0,>=0.27.0 (from fastapi==0.104.1->-r requirements.txt (line 1))
+2025-11-25T19:10:43.0736846Z [19:08:43+0000]   Downloading starlette-0.27.0-py3-none-any.whl.metadata (5.8 kB)
+2025-11-25T19:10:43.1216562Z [19:08:43+0000] Collecting typing-extensions>=4.8.0 (from fastapi==0.104.1->-r requirements.txt (line 1))
+2025-11-25T19:10:43.1637646Z [19:08:43+0000]   Downloading typing_extensions-4.15.0-py3-none-any.whl.metadata (3.3 kB)
+2025-11-25T19:10:43.2001690Z [19:08:43+0000] Collecting click>=7.0 (from uvicorn==0.24.0->uvicorn[standard]==0.24.0->-r requirements.txt (line 2))
+2025-11-25T19:10:43.2766176Z [19:08:43+0000]   Downloading click-8.3.1-py3-none-any.whl.metadata (2.6 kB)
+2025-11-25T19:10:43.3149732Z [19:08:43+0000] Collecting h11>=0.8 (from uvicorn==0.24.0->uvicorn[standard]==0.24.0->-r requirements.txt (line 2))
+2025-11-25T19:10:43.3452262Z [19:08:43+0000]   Downloading h11-0.16.0-py3-none-any.whl.metadata (8.3 kB)
+2025-11-25T19:10:43.3826106Z [19:08:43+0000] Collecting packaging (from gunicorn==21.2.0->-r requirements.txt (line 3))
+2025-11-25T19:10:43.4037514Z [19:08:43+0000]   Downloading packaging-25.0-py3-none-any.whl.metadata (3.3 kB)
+2025-11-25T19:10:43.4240114Z [19:08:46+0000] Collecting pikepdf (from img2pdf==0.5.0->-r requirements.txt (line 7))
+2025-11-25T19:10:43.4614045Z [19:08:46+0000]   Downloading pikepdf-10.0.2-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (8.3 kB)
+2025-11-25T19:10:43.5001312Z [19:08:46+0000] Collecting PyMuPDFb==1.23.7 (from PyMuPDF==1.23.8->-r requirements.txt (line 8))
+2025-11-25T19:10:43.5637418Z [19:08:46+0000]   Downloading PyMuPDFb-1.23.7-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.3 kB)
+2025-11-25T19:10:43.6871870Z [19:08:47+0000] Collecting python-dotenv>=0.21.0 (from pydantic-settings==2.1.0->-r requirements.txt (line 9))
+2025-11-25T19:10:43.7819543Z [19:08:47+0000]   Downloading python_dotenv-1.2.1-py3-none-any.whl.metadata (25 kB)
+2025-11-25T19:10:43.8571161Z [19:08:48+0000] Collecting httptools>=0.5.0 (from uvicorn[standard]==0.24.0->-r requirements.txt (line 2))
+2025-11-25T19:10:43.9911600Z [19:08:48+0000]   Downloading httptools-0.7.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (3.5 kB)
+2025-11-25T19:10:44.0299064Z [19:08:49+0000] Collecting pyyaml>=5.1 (from uvicorn[standard]==0.24.0->-r requirements.txt (line 2))
+2025-11-25T19:10:44.0778828Z [19:08:49+0000]   Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.4 kB)
+2025-11-25T19:10:44.1314443Z [19:08:50+0000] Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0 (from uvicorn[standard]==0.24.0->-r requirements.txt (line 2))
+2025-11-25T19:10:44.2270788Z [19:08:50+0000]   Downloading uvloop-0.22.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (4.9 kB)
+2025-11-25T19:10:44.2927325Z [19:08:53+0000] Collecting watchfiles>=0.13 (from uvicorn[standard]==0.24.0->-r requirements.txt (line 2))
+2025-11-25T19:10:44.3551962Z [19:08:53+0000]   Downloading watchfiles-1.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (4.9 kB)
+2025-11-25T19:10:44.3763883Z [19:08:54+0000] Collecting websockets>=10.4 (from uvicorn[standard]==0.24.0->-r requirements.txt (line 2))
+2025-11-25T19:10:44.4219920Z [19:08:54+0000]   Downloading websockets-15.0.1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.8 kB)
+2025-11-25T19:10:44.4907861Z [19:08:55+0000] Collecting idna>=2.8 (from anyio<4.0.0,>=3.7.1->fastapi==0.104.1->-r requirements.txt (line 1))
+2025-11-25T19:10:44.5515008Z [19:08:55+0000]   Downloading idna-3.11-py3-none-any.whl.metadata (8.4 kB)
+2025-11-25T19:10:44.6014656Z [19:08:55+0000] Collecting sniffio>=1.1 (from anyio<4.0.0,>=3.7.1->fastapi==0.104.1->-r requirements.txt (line 1))
+2025-11-25T19:10:44.6593802Z [19:08:56+0000]   Downloading sniffio-1.3.1-py3-none-any.whl.metadata (3.9 kB)
+2025-11-25T19:10:44.6897234Z [19:08:56+0000] Collecting annotated-types>=0.6.0 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.104.1->-r requirements.txt (line 1))
+2025-11-25T19:10:44.7259971Z [19:08:56+0000]   Downloading annotated_types-0.7.0-py3-none-any.whl.metadata (15 kB)
+2025-11-25T19:10:44.7860404Z [19:09:13+0000] Collecting pydantic-core==2.41.5 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.104.1->-r requirements.txt (line 1))
+2025-11-25T19:10:44.8526691Z [19:09:13+0000]   Downloading pydantic_core-2.41.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (7.3 kB)
+2025-11-25T19:10:44.8974873Z [19:09:14+0000] Collecting typing-inspection>=0.4.2 (from pydantic!=1.8,!=1.8.1,!=2.0.0,!=2.0.1,!=2.1.0,<3.0.0,>=1.7.4->fastapi==0.104.1->-r requirements.txt (line 1))
+2025-11-25T19:10:44.9469853Z [19:09:14+0000]   Downloading typing_inspection-0.4.2-py3-none-any.whl.metadata (2.6 kB)
+2025-11-25T19:10:45.0037057Z [19:09:18+0000] Collecting Deprecated (from pikepdf->img2pdf==0.5.0->-r requirements.txt (line 7))
+2025-11-25T19:10:45.0712899Z [19:09:18+0000]   Downloading deprecated-1.3.1-py2.py3-none-any.whl.metadata (5.9 kB)
+2025-11-25T19:10:45.1541250Z [19:09:22+0000] Collecting lxml>=4.8 (from pikepdf->img2pdf==0.5.0->-r requirements.txt (line 7))
+2025-11-25T19:10:45.2005465Z [19:09:22+0000]   Downloading lxml-6.0.2-cp311-cp311-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl.metadata (3.6 kB)
+2025-11-25T19:10:45.2577643Z [19:09:28+0000] Collecting wrapt<3,>=1.10 (from Deprecated->pikepdf->img2pdf==0.5.0->-r requirements.txt (line 7))
+2025-11-25T19:10:45.2878815Z [19:09:28+0000]   Downloading wrapt-2.0.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (9.0 kB)
+2025-11-25T19:10:45.3338507Z [19:09:28+0000] Downloading fastapi-0.104.1-py3-none-any.whl (92 kB)
+2025-11-25T19:10:45.3800428Z [19:09:28+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 92.9/92.9 kB 4.4 MB/s eta 0:00:00
+2025-11-25T19:10:45.4175610Z [19:09:28+0000] Downloading uvicorn-0.24.0-py3-none-any.whl (59 kB)
+2025-11-25T19:10:45.4497676Z [19:09:28+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 59.6/59.6 kB 1.7 MB/s eta 0:00:00
+2025-11-25T19:10:45.5063042Z [19:09:29+0000] Downloading gunicorn-21.2.0-py3-none-any.whl (80 kB)
+2025-11-25T19:10:45.5460223Z [19:09:29+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.2/80.2 kB 1.6 MB/s eta 0:00:00
+2025-11-25T19:10:45.6160673Z [19:09:29+0000] Downloading Pillow-10.1.0-cp311-cp311-manylinux_2_28_x86_64.whl (3.6 MB)
+2025-11-25T19:10:45.6462823Z [19:09:29+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.6/3.6 MB 8.3 MB/s eta 0:00:00
+2025-11-25T19:10:45.6895061Z [19:09:29+0000] Downloading pypdf2-3.0.1-py3-none-any.whl (232 kB)
+2025-11-25T19:10:45.7283406Z [19:09:29+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 232.6/232.6 kB 2.1 MB/s eta 0:00:00
+2025-11-25T19:10:45.7725365Z [19:09:29+0000] Downloading PyMuPDF-1.23.8-cp311-none-manylinux2014_x86_64.whl (4.4 MB)
+2025-11-25T19:10:45.7943276Z [19:09:30+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.4/4.4 MB 5.7 MB/s eta 0:00:00
+2025-11-25T19:10:45.8689777Z [19:09:30+0000] Downloading pydantic_settings-2.1.0-py3-none-any.whl (11 kB)
+2025-11-25T19:10:46.0086183Z [19:09:30+0000] Downloading aiofiles-23.2.1-py3-none-any.whl (15 kB)
+2025-11-25T19:10:46.0466483Z [19:09:30+0000] Downloading PyMuPDFb-1.23.7-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (30.6 MB)
+2025-11-25T19:10:46.1029520Z [19:09:42+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 30.6/30.6 MB 1.7 MB/s eta 0:00:00
+2025-11-25T19:10:46.1345365Z [19:09:42+0000] Downloading python_multipart-0.0.20-py3-none-any.whl (24 kB)
+2025-11-25T19:10:46.1826825Z [19:09:42+0000] Downloading anyio-3.7.1-py3-none-any.whl (80 kB)
+2025-11-25T19:10:46.2117140Z [19:09:43+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 80.9/80.9 kB 195.4 kB/s eta 0:00:00
+2025-11-25T19:10:46.2377461Z [19:09:43+0000] Downloading click-8.3.1-py3-none-any.whl (108 kB)
+2025-11-25T19:10:46.3210834Z [19:09:43+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 108.3/108.3 kB 853.4 kB/s eta 0:00:00
+2025-11-25T19:10:46.3696856Z [19:09:43+0000] Downloading h11-0.16.0-py3-none-any.whl (37 kB)
+2025-11-25T19:10:46.3953736Z [19:09:44+0000] Downloading httptools-0.7.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (456 kB)
+2025-11-25T19:10:46.4183214Z [19:09:45+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 456.6/456.6 kB 952.0 kB/s eta 0:00:00
+2025-11-25T19:10:46.4718264Z [19:09:45+0000] Downloading pydantic-2.12.4-py3-none-any.whl (463 kB)
+2025-11-25T19:10:46.5113793Z [19:09:46+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 463.4/463.4 kB 1.1 MB/s eta 0:00:00
+2025-11-25T19:10:46.5276808Z [19:09:46+0000] Downloading pydantic_core-2.41.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+2025-11-25T19:10:46.5574014Z [19:09:47+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 4.0 MB/s eta 0:00:00
+2025-11-25T19:10:46.5916630Z [19:09:47+0000] Downloading python_dotenv-1.2.1-py3-none-any.whl (21 kB)
+2025-11-25T19:10:46.6206504Z [19:09:47+0000] Downloading pyyaml-6.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (806 kB)
+2025-11-25T19:10:46.6490851Z [19:09:47+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 806.6/806.6 kB 6.1 MB/s eta 0:00:00
+2025-11-25T19:10:46.6873155Z [19:09:47+0000] Downloading starlette-0.27.0-py3-none-any.whl (66 kB)
+2025-11-25T19:10:46.7932078Z [19:09:47+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 67.0/67.0 kB 537.6 kB/s eta 0:00:00
+2025-11-25T19:10:46.8320798Z [19:09:48+0000] Downloading typing_extensions-4.15.0-py3-none-any.whl (44 kB)
+2025-11-25T19:10:46.8782249Z [19:09:48+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 44.6/44.6 kB 626.0 kB/s eta 0:00:00
+2025-11-25T19:10:46.9256273Z [19:09:48+0000] Downloading uvloop-0.22.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (3.8 MB)
+2025-11-25T19:10:46.9715710Z [19:09:48+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.8/3.8 MB 10.5 MB/s eta 0:00:00
+2025-11-25T19:10:46.9977697Z [19:09:48+0000] Downloading watchfiles-1.1.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (456 kB)
+2025-11-25T19:10:47.0485489Z [19:09:48+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 456.1/456.1 kB 21.4 MB/s eta 0:00:00
+2025-11-25T19:10:47.0842702Z [19:09:48+0000] Downloading websockets-15.0.1-cp311-cp311-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (182 kB)
+2025-11-25T19:10:47.1074057Z [19:09:48+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━��� 182.3/182.3 kB 1.8 MB/s eta 0:00:00
+2025-11-25T19:10:47.1227343Z [19:09:48+0000] Downloading packaging-25.0-py3-none-any.whl (66 kB)
+2025-11-25T19:10:47.1485075Z [19:09:49+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.5/66.5 kB 1.1 MB/s eta 0:00:00
+2025-11-25T19:10:47.1810221Z [19:09:49+0000] Downloading pikepdf-10.0.2-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (2.6 MB)
+2025-11-25T19:10:47.2161974Z [19:09:49+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.6/2.6 MB 12.9 MB/s eta 0:00:00
+2025-11-25T19:10:47.2600455Z [19:09:49+0000] Downloading annotated_types-0.7.0-py3-none-any.whl (13 kB)
+2025-11-25T19:10:47.2875660Z [19:09:49+0000] Downloading idna-3.11-py3-none-any.whl (71 kB)
+2025-11-25T19:10:47.3184098Z [19:09:49+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 71.0/71.0 kB 2.2 MB/s eta 0:00:00
+2025-11-25T19:10:47.3742413Z [19:09:49+0000] Downloading lxml-6.0.2-cp311-cp311-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl (5.2 MB)
+2025-11-25T19:10:47.4289354Z [19:09:50+0000]    ━━━━━━���━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5.2/5.2 MB 7.1 MB/s eta 0:00:00
+2025-11-25T19:10:47.5023151Z [19:09:50+0000] Downloading sniffio-1.3.1-py3-none-any.whl (10 kB)
+2025-11-25T19:10:47.5326466Z [19:09:50+0000] Downloading typing_inspection-0.4.2-py3-none-any.whl (14 kB)
+2025-11-25T19:10:47.5963869Z [19:09:50+0000] Downloading deprecated-1.3.1-py2.py3-none-any.whl (11 kB)
+2025-11-25T19:10:47.6181213Z [19:09:50+0000] Downloading wrapt-2.0.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (114 kB)
+2025-11-25T19:10:47.6643046Z [19:09:50+0000]    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 114.1/114.1 kB 1.6 MB/s eta 0:00:00
+2025-11-25T19:10:47.7108249Z [19:09:53+0000] Building wheels for collected packages: img2pdf
+2025-11-25T19:10:47.7609679Z [19:09:53+0000]   Building wheel for img2pdf (setup.py): started
+2025-11-25T19:10:47.8186645Z [19:09:58+0000]   Building wheel for img2pdf (setup.py): finished with status 'done'
+2025-11-25T19:10:47.9004743Z [19:09:58+0000]   Created wheel for img2pdf: filename=img2pdf-0.5.0-py3-none-any.whl size=49048 sha256=376eb27009a5a37487e1d4084ab0d9dfe82ea6a8a921d9ba06c5206d02cb3750
+2025-11-25T19:10:48.0342969Z [19:09:58+0000]   Stored in directory: /usr/local/share/pip-cache/wheels/9b/e7/05/8f56b33ed48c58a71c556ffb3062a243f90db61b1502aba2fd
+2025-11-25T19:10:48.0901913Z [19:09:58+0000] Successfully built img2pdf
+2025-11-25T19:10:48.1187140Z [19:10:00+0000] Installing collected packages: wrapt, websockets, uvloop, typing-extensions, sniffio, pyyaml, python-multipart, python-dotenv, PyPDF2, PyMuPDFb, Pillow, packaging, lxml, idna, httptools, h11, click, annotated-types, aiofiles, uvicorn, typing-inspection, PyMuPDF, pydantic-core, gunicorn, Deprecated, anyio, watchfiles, starlette, pydantic, pikepdf, pydantic-settings, img2pdf, fastapi
+2025-11-25T19:10:48.1760170Z [19:10:36+0000] Successfully installed Deprecated-1.3.1 Pillow-10.1.0 PyMuPDF-1.23.8 PyMuPDFb-1.23.7 PyPDF2-3.0.1 aiofiles-23.2.1 annotated-types-0.7.0 anyio-3.7.1 click-8.3.1 fastapi-0.104.1 gunicorn-21.2.0 h11-0.16.0 httptools-0.7.1 idna-3.11 img2pdf-0.5.0 lxml-6.0.2 packaging-25.0 pikepdf-10.0.2 pydantic-2.12.4 pydantic-core-2.41.5 pydantic-settings-2.1.0 python-dotenv-1.2.1 python-multipart-0.0.20 pyyaml-6.0.3 sniffio-1.3.1 starlette-0.27.0 typing-extensions-4.15.0 typing-inspection-0.4.2 uvicorn-0.24.0 uvloop-0.22.1 watchfiles-1.1.1 websockets-15.0.1 wrapt-2.0.1
+2025-11-25T19:10:48.2042770Z 
+2025-11-25T19:10:48.2315458Z [notice] A new release of pip is available: 24.0 -> 25.3
+2025-11-25T19:10:48.2610001Z [notice] To update, run: pip install --upgrade pip
+2025-11-25T19:10:48.2804681Z Not a vso image, so not writing build commands
+2025-11-25T19:10:48.3075413Z Preparing output...
+2025-11-25T19:10:48.3548800Z 
+2025-11-25T19:10:48.3952442Z Copying files to destination directory '/tmp/_preCompressedDestinationDir'...
+2025-11-25T19:10:54.4684279Z ..
+2025-11-25T19:10:54.4703164Z Done in 13 sec(s).
+2025-11-25T19:10:54.5694858Z Compressing content of directory '/tmp/_preCompressedDestinationDir'...
+2025-11-25T19:11:28.8064598Z .............................
+2025-11-25T19:14:25.3122447Z     __ __          __      __    _ __     
+2025-11-25T19:14:25.3131085Z    / //_/_  _ ____/ /_  __/ /   (_) /____ 
+2025-11-25T19:14:25.3131218Z   / ,< / / / / __  / / / / /   / / __/ _  
+2025-11-25T19:14:25.3131254Z  / /| / /_/ / /_/ / /_/ / /___/ / /_/  __/
+2025-11-25T19:14:25.3131286Z /_/ |_\__,_/\__,_/\__,_/_____/_/\__/\___/ 
+2025-11-25T19:14:25.3131319Z 
+2025-11-25T19:14:25.3131376Z                                           
+2025-11-25T19:14:25.3131434Z DEBUG CONSOLE | AZURE APP SERVICE ON LINUX
+2025-11-25T19:14:25.3131465Z 
+2025-11-25T19:14:25.3131497Z Documentation: http://aka.ms/webapp-linux
+2025-11-25T19:14:25.3131533Z Kudu Version : 20251023.4
+2025-11-25T19:14:25.3131567Z Commit       : a44ac6b61760b3c2e5996d5e6ddb2a908ab5733e
+2025-11-25T19:14:25.3131599Z Instance Name: lw1sdlwk0001VM
+2025-11-25T19:14:25.3131649Z Instance Id  : 4ebe23afea73935a88dc9dc0a342837ace980fdbee4ce56685b45ffb96e77ef8
+2025-11-25T19:14:25.3131679Z 
+2025-11-25T19:14:26.7199582Z chown: changing ownership of '/temp': Operation not permitted
+2025-11-25T19:14:26.7597958Z chmod: changing permissions of '/temp': Operation not permitted
+2025-11-25T19:14:29.9691518Z Restarting OpenBSD Secure Shell server: sshd.
+2025-11-25T19:14:30.2141382Z node not running, starting node /opt/webssh/index.js
+2025-11-25T19:14:48.3159252Z Tue Nov 25 19:14:48 UTC 2025 running .net core
+2025-11-25T19:14:50.9102052Z Startup : 07.14.50.874186
+2025-11-25T19:14:50.9916382Z Configure Services : 07.14.50.986955
+2025-11-25T19:14:51.9810742Z Configure : 07.14.51.980799
+2025-11-25T19:14:53.0511378Z Setting Up Routes : 07.14.53.043046
+2025-11-25T19:14:53.8921775Z Exiting Configure : 07.14.53.891569
+2025-11-25T19:14:54.5400069Z Hosting environment: Production
+2025-11-25T19:14:54.5400718Z Content root path: /opt/Kudu
+2025-11-25T19:14:54.5400766Z Now listening on: http://0.0.0.0:8181
+2025-11-25T19:14:54.5400815Z Application started. Press Ctrl+C to shut down.

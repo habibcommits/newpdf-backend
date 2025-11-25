@@ -1,0 +1,159 @@
+2025-11-25T19:08:57.4734312Z    _____                               
+2025-11-25T19:08:57.5381245Z   /  _  \ __________ _________   ____  
+2025-11-25T19:08:57.5392131Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2025-11-25T19:08:57.5404765Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2025-11-25T19:08:57.5503926Z \____|__  /_____ \____/ |__|    \___  >
+2025-11-25T19:08:57.5504119Z         \/      \/                  \/ 
+2025-11-25T19:08:57.5504163Z A P P   S E R V I C E   O N   L I N U X
+2025-11-25T19:08:57.5504199Z 
+2025-11-25T19:08:57.5504247Z Documentation    : http://aka.ms/webapp-linux
+2025-11-25T19:08:57.5504386Z Python quickstart: https://aka.ms/python-qs
+2025-11-25T19:08:57.5504426Z Python version   : 3.11.14
+2025-11-25T19:08:57.5504465Z Instance Name    : lw1sdlwk0001VM
+2025-11-25T19:08:57.5504542Z Instance Id      : 4ebe23afea73935a88dc9dc0a342837ace980fdbee4ce56685b45ffb96e77ef8
+2025-11-25T19:08:57.5504586Z 
+2025-11-25T19:08:57.5504625Z Note: Any data outside '/home' is not persisted
+2025-11-25T19:08:58.9106603Z Starting OpenBSD Secure Shell server: sshd.
+2025-11-25T19:08:58.9713024Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2025-11-25T19:08:59.2859393Z Updating certificates in /etc/ssl/certs...
+2025-11-25T19:09:49.1387291Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_E46.pem
+2025-11-25T19:09:49.1925199Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2025-11-25T19:09:49.2813126Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2025-11-25T19:09:49.3292295Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_R46.pem
+2025-11-25T19:09:49.4865297Z 4 added, 0 removed; done.
+2025-11-25T19:09:49.5136275Z Running hooks in /etc/ca-certificates/update.d...
+2025-11-25T19:09:49.5438041Z done.
+2025-11-25T19:09:49.6191298Z CA certificates copied and updated successfully.
+2025-11-25T19:09:50.1922600Z App Command Line not configured, will attempt auto-detect
+2025-11-25T19:09:51.1628948Z Starting periodic command scheduler: cron.
+2025-11-25T19:09:51.1991464Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite
+2025-11-25T19:09:52.1001864Z Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2025-11-25T19:09:52.1101871Z Could not find operation ID in manifest. Generating an operation id...
+2025-11-25T19:09:52.1113068Z Build Operation ID: 06e7ed53-cdd2-442d-a17d-a0079f844f20
+2025-11-25T19:09:53.3937204Z Oryx Version: 0.2.20251017.2, Commit: 482d4c55e818733ab33b9d2131f9dc485a21fd03, ReleaseTagName: 20251017.2
+2025-11-25T19:09:53.5098655Z No framework detected; using default app from /opt/defaultsite
+2025-11-25T19:09:53.5104282Z Generating `gunicorn` command for 'application:app'
+2025-11-25T19:09:53.5666287Z Writing output script to '/opt/startup/startup.sh'
+2025-11-25T19:09:53.7563018Z WARNING: Could not find virtual environment directory /home/site/wwwroot/antenv.
+2025-11-25T19:09:53.7564863Z WARNING: Could not find package directory /home/site/wwwroot/__oryx_packages__.
+2025-11-25T19:10:00.9515040Z [2025-11-25 19:10:00 +0000] [2108] [INFO] Starting gunicorn 23.0.0
+2025-11-25T19:10:01.1395189Z [2025-11-25 19:10:01 +0000] [2108] [INFO] Listening at: http://0.0.0.0:8000 (2108)
+2025-11-25T19:10:01.1480516Z [2025-11-25 19:10:01 +0000] [2108] [INFO] Using worker: sync
+2025-11-25T19:10:01.1988343Z [2025-11-25 19:10:01 +0000] [2111] [INFO] Booting worker with pid: 2111
+2025-11-25T19:10:09.3103570Z 169.254.129.1 - - [25/Nov/2025:19:10:09 +0000] "GET /robots933456.txt HTTP/1.1" 404 207 "-" "HealthCheck/1.0"
+2025-11-25T19:10:13.5646672Z 169.254.129.1 - - [25/Nov/2025:19:10:13 +0000] "GET /health HTTP/1.1" 404 207 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.22000.282"
+2025-11-25T19:10:13.5748091Z 169.254.129.1 - - [25/Nov/2025:19:10:13 +0000] "GET /docs HTTP/1.1" 404 207 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-US) WindowsPowerShell/5.1.22000.282"
+2025-11-25T19:10:13.9789816Z 169.254.129.1 - - [25/Nov/2025:19:10:13 +0000] "GET / HTTP/1.1" 200 0 "-" "ReadyForRequest/1.0 (LocalCache)"
+2025-11-25T19:10:14.2541709Z 169.254.129.1 - - [25/Nov/2025:19:10:14 +0000] "GET / HTTP/1.1" 200 0 "-" "ReadyForRequest/1.0 (AppInit)"
+2025-11-25T19:12:02.6508550Z    _____                               
+2025-11-25T19:12:02.6510532Z   /  _  \ __________ _________   ____  
+2025-11-25T19:12:02.6510599Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2025-11-25T19:12:02.6510832Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2025-11-25T19:12:02.6510873Z \____|__  /_____ \____/ |__|    \___  >
+2025-11-25T19:12:02.6510934Z         \/      \/                  \/ 
+2025-11-25T19:12:02.6510994Z A P P   S E R V I C E   O N   L I N U X
+2025-11-25T19:12:02.6511030Z 
+2025-11-25T19:12:02.6511072Z Documentation    : http://aka.ms/webapp-linux
+2025-11-25T19:12:02.6511113Z Python quickstart: https://aka.ms/python-qs
+2025-11-25T19:12:02.6511150Z Python version   : 3.11.14
+2025-11-25T19:12:02.6511187Z Instance Name    : lw1sdlwk0001VM
+2025-11-25T19:12:02.6511234Z Instance Id      : 4ebe23afea73935a88dc9dc0a342837ace980fdbee4ce56685b45ffb96e77ef8
+2025-11-25T19:12:02.6511290Z 
+2025-11-25T19:12:02.6511327Z Note: Any data outside '/home' is not persisted
+2025-11-25T19:12:06.6946311Z Starting OpenBSD Secure Shell server: sshd.
+2025-11-25T19:12:06.7537178Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2025-11-25T19:12:06.9974569Z Updating certificates in /etc/ssl/certs...
+2025-11-25T19:12:56.1813371Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_E46.pem
+2025-11-25T19:12:56.1986859Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2025-11-25T19:12:56.2575354Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2025-11-25T19:12:56.2764710Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_R46.pem
+2025-11-25T19:12:56.3391598Z 4 added, 0 removed; done.
+2025-11-25T19:12:56.3471514Z Running hooks in /etc/ca-certificates/update.d...
+2025-11-25T19:12:56.3729045Z done.
+2025-11-25T19:12:56.3920469Z CA certificates copied and updated successfully.
+2025-11-25T19:12:56.6421054Z Site's appCommandLine: gunicorn --bind=0.0.0.0 --timeout 600 --access-logfile '-' --error-logfile '-' main:app --worker-class uvicorn.workers.UvicornWorker
+2025-11-25T19:12:57.1085481Z Starting periodic command scheduler: cron.
+2025-11-25T19:12:57.1098446Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind=0.0.0.0 --timeout 600 --access-logfile '-' --error-logfile '-' main:app --worker-class uvicorn.workers.UvicornWorker'
+2025-11-25T19:12:57.3402589Z Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2025-11-25T19:12:57.3406906Z Could not find operation ID in manifest. Generating an operation id...
+2025-11-25T19:12:57.3415085Z Build Operation ID: 042ede2a-9684-4943-8b4b-356213ebe066
+2025-11-25T19:12:57.9445600Z Oryx Version: 0.2.20251017.2, Commit: 482d4c55e818733ab33b9d2131f9dc485a21fd03, ReleaseTagName: 20251017.2
+2025-11-25T19:12:58.0029014Z Writing output script to '/opt/startup/startup.sh'
+2025-11-25T19:12:58.1518586Z WARNING: Could not find virtual environment directory /home/site/wwwroot/antenv.
+2025-11-25T19:12:58.1686301Z WARNING: Could not find package directory /home/site/wwwroot/__oryx_packages__.
+2025-11-25T19:12:59.9210552Z 
+2025-11-25T19:12:59.9211273Z Error: class uri 'uvicorn.workers.UvicornWorker' invalid or not found: 
+2025-11-25T19:12:59.9211345Z 
+2025-11-25T19:12:59.9211382Z [Traceback (most recent call last):
+2025-11-25T19:12:59.9211426Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/util.py", line 110, in load_class
+2025-11-25T19:12:59.9211465Z     mod = importlib.import_module('.'.join(components))
+2025-11-25T19:12:59.9211507Z           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-11-25T19:12:59.9211632Z   File "/opt/python/3.11.14/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-11-25T19:12:59.9211671Z     return _bootstrap._gcd_import(name[level:], package, level)
+2025-11-25T19:12:59.9211710Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-11-25T19:12:59.9211748Z   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-11-25T19:12:59.9211785Z   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-11-25T19:12:59.9211825Z   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+2025-11-25T19:12:59.9211886Z   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-11-25T19:12:59.9211923Z   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-11-25T19:12:59.9211962Z   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-11-25T19:12:59.9212001Z   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+2025-11-25T19:12:59.9212087Z ModuleNotFoundError: No module named 'uvicorn'
+2025-11-25T19:12:59.9212144Z ]
+2025-11-25T19:12:59.9367421Z 
+2025-11-25T19:13:08.2528609Z    _____                               
+2025-11-25T19:13:08.2528906Z   /  _  \ __________ _________   ____  
+2025-11-25T19:13:08.2528944Z  /  /_\  \\___   /  |  \_  __ \_/ __ \ 
+2025-11-25T19:13:08.2528973Z /    |    \/    /|  |  /|  | \/\  ___/ 
+2025-11-25T19:13:08.2529002Z \____|__  /_____ \____/ |__|    \___  >
+2025-11-25T19:13:08.2529029Z         \/      \/                  \/ 
+2025-11-25T19:13:08.2529057Z A P P   S E R V I C E   O N   L I N U X
+2025-11-25T19:13:08.2529083Z 
+2025-11-25T19:13:08.2529111Z Documentation    : http://aka.ms/webapp-linux
+2025-11-25T19:13:08.2529140Z Python quickstart: https://aka.ms/python-qs
+2025-11-25T19:13:08.2529191Z Python version   : 3.11.14
+2025-11-25T19:13:08.2529221Z Instance Name    : lw1sdlwk0001VM
+2025-11-25T19:13:08.2529254Z Instance Id      : 4ebe23afea73935a88dc9dc0a342837ace980fdbee4ce56685b45ffb96e77ef8
+2025-11-25T19:13:08.2529281Z 
+2025-11-25T19:13:08.2529309Z Note: Any data outside '/home' is not persisted
+2025-11-25T19:13:10.1855861Z Starting OpenBSD Secure Shell server: sshd.
+2025-11-25T19:13:10.2541424Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2025-11-25T19:13:10.3602257Z Updating certificates in /etc/ssl/certs...
+2025-11-25T19:13:59.1447312Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_E46.pem
+2025-11-25T19:13:59.1647246Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_ECC_Root_CA_2022.pem
+2025-11-25T19:13:59.2290552Z rehash: warning: skipping duplicate certificate in azl_SSL.com_TLS_RSA_Root_CA_2022.pem
+2025-11-25T19:13:59.2569845Z rehash: warning: skipping duplicate certificate in azl_Sectigo_Public_Server_Authentication_Root_R46.pem
+2025-11-25T19:13:59.3641559Z 4 added, 0 removed; done.
+2025-11-25T19:13:59.3642183Z Running hooks in /etc/ca-certificates/update.d...
+2025-11-25T19:13:59.3813595Z done.
+2025-11-25T19:13:59.4440233Z CA certificates copied and updated successfully.
+2025-11-25T19:13:59.6307327Z Site's appCommandLine: gunicorn --bind=0.0.0.0 --timeout 600 --access-logfile '-' --error-logfile '-' main:app --worker-class uvicorn.workers.UvicornWorker
+2025-11-25T19:14:00.8166900Z Starting periodic command scheduler: cron.
+2025-11-25T19:14:00.8374371Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite -userStartupCommand 'gunicorn --bind=0.0.0.0 --timeout 600 --access-logfile '-' --error-logfile '-' main:app --worker-class uvicorn.workers.UvicornWorker'
+2025-11-25T19:14:01.2410724Z Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2025-11-25T19:14:01.2523615Z Could not find operation ID in manifest. Generating an operation id...
+2025-11-25T19:14:01.2955386Z Build Operation ID: b3750976-0bb1-42ac-b14c-e0e0cafc633d
+2025-11-25T19:14:05.1686146Z Oryx Version: 0.2.20251017.2, Commit: 482d4c55e818733ab33b9d2131f9dc485a21fd03, ReleaseTagName: 20251017.2
+2025-11-25T19:14:05.3076903Z Writing output script to '/opt/startup/startup.sh'
+2025-11-25T19:14:06.3138881Z WARNING: Could not find virtual environment directory /home/site/wwwroot/antenv.
+2025-11-25T19:14:06.3322207Z WARNING: Could not find package directory /home/site/wwwroot/__oryx_packages__.
+2025-11-25T19:14:11.3448778Z 
+2025-11-25T19:14:11.3449400Z Error: class uri 'uvicorn.workers.UvicornWorker' invalid or not found: 
+2025-11-25T19:14:11.3449566Z 
+2025-11-25T19:14:11.3449596Z [Traceback (most recent call last):
+2025-11-25T19:14:11.3449627Z   File "/opt/python/3.11.14/lib/python3.11/site-packages/gunicorn/util.py", line 110, in load_class
+2025-11-25T19:14:11.3449756Z     mod = importlib.import_module('.'.join(components))
+2025-11-25T19:14:11.3449785Z           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-11-25T19:14:11.3449816Z   File "/opt/python/3.11.14/lib/python3.11/importlib/__init__.py", line 126, in import_module
+2025-11-25T19:14:11.3449846Z     return _bootstrap._gcd_import(name[level:], package, level)
+2025-11-25T19:14:11.3449875Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-11-25T19:14:11.3449904Z   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-11-25T19:14:11.3449933Z   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-11-25T19:14:11.3449962Z   File "<frozen importlib._bootstrap>", line 1126, in _find_and_load_unlocked
+2025-11-25T19:14:11.3449992Z   File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+2025-11-25T19:14:11.3450021Z   File "<frozen importlib._bootstrap>", line 1204, in _gcd_import
+2025-11-25T19:14:11.3450070Z   File "<frozen importlib._bootstrap>", line 1176, in _find_and_load
+2025-11-25T19:14:11.3450100Z   File "<frozen importlib._bootstrap>", line 1140, in _find_and_load_unlocked
+2025-11-25T19:14:11.3450128Z ModuleNotFoundError: No module named 'uvicorn'
+2025-11-25T19:14:11.3450155Z ]
+2025-11-25T19:14:11.3450180Z 

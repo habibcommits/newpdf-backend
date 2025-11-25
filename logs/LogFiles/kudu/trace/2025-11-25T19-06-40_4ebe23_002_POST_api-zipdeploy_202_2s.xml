@@ -1,0 +1,17 @@
+<step title="Incoming Request" date="2025-11-25T19:06:40.789" instance="4ebe23" url="/api/zipdeploy?isAsync=true" method="POST" type="request" pid="770,1,7" Accept="*/*" Host="pdf-api-app-12345.scm.azurewebsites.net" User-Agent="AZURECLI/2.80.0 (MSI)" Accept-Encoding="gzip, deflate" Authorization="Bea..." Cache-Control="no-cache" Content-Type="application/octet-stream" Content-Length="6803176" x-ms-client-request-id="a32299ee-ca31-11f0-a092-588a5a3cfd5e" x-ms-artifact-checksum="29e14f1e76ffb4608b26883dd4fca91830e286643171e2b0e4cfed655a82ddc0" X-ARR-LOG-ID="a32299ee-ca31-11f0-a092-588a5a3cfd5e" CLIENT-IP="137.59.147.248:59387" X-SITE-DEPLOYMENT-ID="pdf-api-app-12345" WAS-DEFAULT-HOSTNAME="pdf-api-app-12345.scm.azurewebsites.net" X-Forwarded-Proto="https" X-AppService-Proto="https" X-Forwarded-TlsVersion="1.3" X-WAWS-Unencoded-URL="/api/zipdeploy?isAsync=true" X-Client-IP="137.59.147.248" X-Client-Port="59387" >
+  <step title="ZipPushDeploy" date="2025-11-25T19:06:41.535" >
+    <step title="ZipDeploy. Extract zip. Remote build." date="2025-11-25T19:06:41.567" /><!-- duration: 5ms -->
+    <step title="None repository commit" date="2025-11-25T19:06:41.581" >
+      <step title="Commit id: 6303a9ce-9dc9-46cb-846c-706f8de833f7" date="2025-11-25T19:06:41.585" Message="N/A" AuthorName="N/A" AuthorEmail="N/A" /><!-- duration: 6ms -->
+    </step><!-- duration: 15ms -->
+    <step title="Starting PushDeployAsync" date="2025-11-25T19:06:41.603" /><!-- duration: 5ms -->
+    <step title="Writing artifact to /tmp/zipdeploy/b5755ac0-1dfa-4de2-a80b-f606517d98cb.zip" date="2025-11-25T19:06:41.633" >
+      <step title="Writing multipart request body to /tmp/zipdeploy/b5755ac0-1dfa-4de2-a80b-f606517d98cb.zip" date="2025-11-25T19:06:41.656" /><!-- duration: 4ms -->
+    </step><!-- duration: 615ms -->
+    <step title="Start deployment in the background" date="2025-11-25T19:06:42.337" >
+      <step title="Acquiring Deployment Lock" date="2025-11-25T19:06:42.467" /><!-- duration: 18ms -->
+      <step title="Acquired Deployment Lock" date="2025-11-25T19:06:42.664" /><!-- duration: 4ms -->
+    </step><!-- duration: 520ms -->
+  </step><!-- duration: 1377ms -->
+  <step title="Outgoing response" date="2025-11-25T19:06:42.988" type="response" statusCode="202" statusText="Accepted" /><!-- duration: 26ms -->
+</step><!-- duration: 2240ms -->
